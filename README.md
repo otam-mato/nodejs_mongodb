@@ -7,6 +7,7 @@
 - MongoDB installed and started
 - NodeJS and npm installed
 - `git clone https://github.com/otam-mato/nodejs_mongodb.git`
+- `npm install`
 - `node index.js`
 
 <br>
