@@ -9,9 +9,9 @@
 - `git clone https://github.com/otam-mato/nodejs_mongodb.git`
 - `node index.js`
 
-<br><br>
+<br>
 
-<details markdown=1><summary markdown="span">Details of the app. Main solution</summary>
+<details markdown=1><summary markdown="span">Details of the app</summary>
 
 ## Summary
 
@@ -55,6 +55,8 @@ The Main Solution:
    - The server comes to life, starts listening for visits, and announces its awakening with a log message.
 
 </details>
+
+<br><br>
 
 ## AS IS:
 
