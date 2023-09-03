@@ -12,7 +12,7 @@
 
 <br>
 
-<details markdown=1><summary markdown="span">Details of the app</summary>
+<details markdown=1><summary markdown="span">App description</summary>
 
 ## Summary
 
