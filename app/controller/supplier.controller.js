@@ -1,124 +1,85 @@
-const Supplier = require("../models/supplier.model.js");
-
-
-const {body, validationResult} = require("express-validator");
-
-
-exports.create = [
-
-    // Validate and sanitize the name field.
-    body('name', 'The supplier name is required').trim().isLength({min: 1}).escape(),
-    body('address', 'The supplier address is required').trim().isLength({min: 1}).escape(),
-    body('city', 'The supplier city is required').trim().isLength({min: 1}).escape(),
-    body('state', 'The supplier state is required').trim().isLength({min: 1}).escape(),
-    body('phone', 'Phone number should be 10 digit number plus optional country code').trim().isMobilePhone().escape(),
-
-    // Process request after validation and sanitization.
-    (req, res, next) => {
-
-        // Extract the validation errors from a request.
-        const errors = validationResult(req);
-
-        // Create a genre object with escaped and trimmed data.
-        const supplier = new Supplier(req.body);
-
-        if (!errors.isEmpty()) {
-            // There are errors. Render the form again with sanitized values/error messages.
-            res.render('supplier-add', {title: 'Create Genre', supplier: supplier, errors: errors.array()});
-        } else {
-            // Data from form is valid., save to db
-            Supplier.create(supplier, (err, data) => {
-                if (err)
-                    res.render("500", {message: `Error occurred while creating the Supplier.`});
-                else res.redirect("/suppliers");
-            });
-        }
-    }
-];
-
-exports.findAll = (req, res) => {
-    Supplier.getAll((err, data) => {
-        if (err)
-            res.render("500", {message: "The was a problem retrieving the list of suppliers"});
-        else res.render("supplier-list-all", {suppliers: data});
-    });
-};
-
-exports.findOne = (req, res) => {
-    Supplier.findById(req.params.id, (err, data) => {
+Supplier.create = (newSupplier, result) => {
+    Supplier.create(newSupplier, (err, data) => {
         if (err) {
-            if (err.kind === "not_found") {
-                res.status(404).send({
-                    message: `Not found Supplier with id ${req.params.id}.`
-                });
-            } else {
-                res.render("500", {message: `Error retrieving Supplier with id ${req.params.id}`});
-            }
-        } else res.render("supplier-update", {supplier: data});
-    });
-};
-
-
-exports.update = [
-
-    // Validate and sanitize the name field.
-    body('name', 'The supplier name is required').trim().isLength({min: 1}).escape(),
-    body('address', 'The supplier address is required').trim().isLength({min: 1}).escape(),
-    body('city', 'The supplier city is required').trim().isLength({min: 1}).escape(),
-    body('state', 'The supplier state is required').trim().isLength({min: 1}).escape(),
-    body('phone', 'Phone number should be 10 digit number plus optional country code').trim().isMobilePhone().escape(),
-
-    // Process request after validation and sanitization.
-    (req, res, next) => {
-
-        // Extract the validation errors from a request.
-        const errors = validationResult(req);
-
-        // Create a genre object with escaped and trimmed data.
-        const supplier = new Supplier(req.body);
-        supplier.i
-
-        if (!errors.isEmpty()) {
-            // There are errors. Render the form again with sanitized values/error messages.
-            res.render('supplier-update', {supplier: supplier, errors: errors.array()});
-        } else {
-            // Data from form is valid., save to db
-            Supplier.updateById(
-                req.body.id,
-                supplier,
-                (err, data) => {
-                    if (err) {
-                        if (err.kind === "not_found") {
-                            res.status(404).send({
-                                message: `Supplier with id ${req.body.id} Not found.`
-                            });
-                        } else {
-                            res.render("500", {message: `Error updating Supplier with id ${req.body.id}`});
-                        }
-                    } else res.redirect("/suppliers");
-                }
-            );
+            console.log("error:", err);
+            result(err, null);
+            return;
         }
-    }
-];
-
-exports.remove = (req, res) => {
-    Supplier.delete(req.params.id, (err, data) => {
-        if (err) {
-            if (err.kind === "not_found") {
-                res.status(404).send({
-                    message: `Not found Supplier with id ${req.params.id}.`
-                });
-            } else {
-                res.render("500", {message: `Could not delete Supplier with id ${req.body.id}`});
-            }
-        } else res.redirect("/suppliers");
+        console.log("created supplier:", data);
+        result(null, data);
     });
 };
 
-exports.removeAll = (req, res) => {
-    Supplier.removeAll((err, data) => {
-        if (err)
-            res.render("500", {message: `Some error occurred while removing all suppliers.`});
-        else res.send({message: `All Suppliers were deleted successfully!`});
+Supplier.getAll = result => {
+    Supplier.find({}, (err, data) => {
+        if (err) {
+            console.log("error:", err);
+            result(err, null);
+            return;
+        }
+        console.log("suppliers:", data);
+        result(null, data);
+    });
+};
 
+Supplier.findById = (supplierId, result) => {
+    Supplier.findById(supplierId, (err, data) => {
+        if (err) {
+            console.log("error:", err);
+            result(err, null);
+            return;
+        }
+        if (!data) {
+            result({ kind: "not_found" }, null);
+            return;
+        }
+        console.log("found supplier:", data);
+        result(null, data);
+    });
+};
+
+Supplier.updateById = (id, supplierData, result) => {
+    Supplier.findByIdAndUpdate(id, supplierData, { new: true }, (err, data) => {
+        if (err) {
+            console.log("error:", err);
+            result(err, null);
+            return;
+        }
+        if (!data) {
+            result({ kind: "not_found" }, null);
+            return;
+        }
+        console.log("updated supplier:", data);
+        result(null, data);
+    });
+};
+
+Supplier.delete = (id, result) => {
+    Supplier.findByIdAndDelete(id, (err, data) => {
+        if (err) {
+            console.log("error:", err);
+            result(err, null);
+            return;
+        }
+        if (!data) {
+            result({ kind: "not_found" }, null);
+            return;
+        }
+        console.log("deleted supplier with id:", id);
+        result(null, data);
+    });
+};
+
+Supplier.removeAll = result => {
+    Supplier.deleteMany({}, (err, data) => {
+        if (err) {
+            console.log("error:", err);
+            result(err, null);
+            return;
+        }
+        console.log(`deleted all suppliers`);
+        result(null, data);
+    });
+};
+
+module.exports = Supplier;
