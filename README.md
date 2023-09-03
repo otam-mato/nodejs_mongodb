@@ -12,6 +12,10 @@
 
 <br>
 
+## Objective:
+
+Perform CRUD operations on a MongoDB database and render the results on a web page.
+
 <details markdown=1><summary markdown="span">App description</summary>
 
 ## Summary
