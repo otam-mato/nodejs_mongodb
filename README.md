@@ -31,10 +31,8 @@ The Main Solution:
 
 #### **Configuration**:
    - The server starts on a port taken from a setting (like an environment variable) or uses `3000` as a default.
-   - `appLogger` is a specific tool used for logging activities related to the server's operation.
 
 #### **Middleware**:
-   - The server has a built-in monitor (`logRequests`) that notes down every incoming request's details.
    - It's equipped to understand data in JSON format or when it's URL-encoded.
    - It can chat with web pages hosted elsewhere, thanks to CORS.
    - Mustache is the chosen format for web pages, with templates stored in a folder named `views`.
