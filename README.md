@@ -69,8 +69,13 @@ The Main Solution:
 <br><br><br><br>
 
 ## TO BE:
-![image](https://github.com/otam-mato/nodejs_mongodb/assets/113034133/67ceeb04-4e60-458d-8620-3e0fcfcb3685)
 
-![image](https://github.com/otam-mato/nodejs_mongodb/assets/113034133/ba99a5d7-55dd-46d2-8ba1-459ed184997f)
+<img width="1000" alt="Screenshot 2023-09-03 at 19 14 29" src="https://github.com/otam-mato/nodejs_mongodb/assets/113034133/6c11186a-bbb7-4f67-8479-a23363b89fd8">
+
+<img width="1000" alt="Screenshot 2023-09-03 at 19 14 29" src="https://github.com/otam-mato/nodejs_mongodb/assets/113034133/ba99a5d7-55dd-46d2-8ba1-459ed184997f">
+
+
+
+
 
 
