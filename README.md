@@ -66,7 +66,7 @@ The Main Solution:
 <img width="1000" alt="Screenshot 2023-09-03 at 19 14 29" src="https://github.com/otam-mato/nodejs_mongodb/assets/113034133/feb43ffb-17a5-4477-803f-ba2b7bb3e5ee">
 
 
-<br><br><br><br>
+<br><br>
 
 ## TO BE:
 
