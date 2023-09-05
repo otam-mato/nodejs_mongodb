@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 const dbConfig =
-  "mongodb+srv://tttalhatariq1:CA1tMMY1wGzo32vB@cluster0.nltm17g.mongodb.net/";
+  "mongodb://localhost:27017/";
 
 // Create mongoose connection
 mongoose.connect(dbConfig, { useNewUrlParser: true, useUnifiedTopology: true });
