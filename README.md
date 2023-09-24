@@ -7,10 +7,10 @@
 
 <br>
 
-# - Modifying the Terraform template 
-# - Creating the infrastructure on AWS with Terraform
-# - Converting SQL database to NoSQL database
-# - Deploying the app on the created EC2 instances.
+## - Modifying the Terraform template 
+## - Creating the infrastructure on AWS with Terraform
+## - Converting SQL database to NoSQL database
+## - Deploying the app on the created EC2 instances.
 
 <br>
 
