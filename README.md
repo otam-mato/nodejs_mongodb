@@ -103,7 +103,7 @@ The Main Solution:
 
 [under revision]
 
-### 2. Converting MySQL database tp MongoDB database using Python
+### 2. Migrating MySQL database tp MongoDB database using Python
 
    **Setting up MySQL:**
    
