@@ -23,7 +23,7 @@
 - Node.JS
 - Express
 - JavaScript
-- Python
+- Python (I used it for converting the database)
 - MongoDB (noSQL DBMS)
 - Terraform
 
