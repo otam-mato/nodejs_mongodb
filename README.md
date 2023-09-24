@@ -10,7 +10,7 @@
 <br>
 
 **Steps:**
-- **Modifying the Terraform template** 
+- **Modifying the Terraform template (+ EC2 - RDS)** 
 - **Creating the infrastructure on AWS with Terraform**
 - **Migrating SQL database to NoSQL database**
 - **Modifying the app files to use MongoDB for CRUD operations instead of MySQL**
