@@ -29,6 +29,12 @@
 ## Summary
 This is a simple Node.JS Express application. It has a two-layer architecture: application layer and data layer. It connects to a **MongoDB** database hosted on an AWS EC2 instance, allowing for CRUD operations. Express provides a robust set of features for web and mobile applications.
 
+<p align="center">
+  <img src="https://github.com/otam-mato/nodejs_mongodb_web_app_terraform/assets/113034133/3bfb9170-cdc5-462b-b12b-47e90c4bc439" width="700px"/>
+</p>
+
+
+
 ---
 
 
