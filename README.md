@@ -47,7 +47,7 @@ This is a simple Node.JS Express application. It has a two-layer architecture: a
 - Proper Permissions for your AWS user
 - Terraform installed (https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
 - MySQL installed (https://muleif.medium.com/how-to-install-mysql-on-amazon-linux-2023-5d39afa5bf11)
-- MongoDB installed ([Official MongoDB installation guide]https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-ubuntu/)
+- MongoDB installed ([Official MongoDB installation guide](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-ubuntu/))
 - A machine or EC2 instance to launch the Terraform script
 - Configure AWS access with AWS CLI and the command ```aws configure```
 
