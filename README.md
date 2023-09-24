@@ -5,7 +5,7 @@
 <br>
 
 > **Note:** A part of the series of demo projects experimenting with a Node.js app.<br><br>
-> This time I convert MySQL database to MongoDB database and launch the app on the EC2 instances on AWS infrastructure created with Terraform.
+> This time I migrate MySQL database to MongoDB database and launch the app on the EC2 instances on AWS infrastructure created with Terraform.
 
 <br>
 
