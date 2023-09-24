@@ -121,7 +121,7 @@ The Main Solution:
        sudo mysql
        ```
    
-   - **Configure MySQL User**:
+   - **Configure MySQL User if you want to test the MySQL database before migrating**:
    
        ```sql
        ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '<yoursecurepassword>';
@@ -157,16 +157,16 @@ The Main Solution:
        mysql -u root -p -e "SELECT * FROM suppliers" coffee > output.csv
        ```
    
-   ### Convert CSV to JSON:
+   **Convert CSV to JSON:**
    
-   1. **Setup Python & Required Libraries**:
+   - **Setup Python & Required Libraries**:
    
        ```bash
        sudo apt install python3-pip
        pip3 install pandas
        ```
    
-   2. **Create the Conversion Script**:
+   - **Create the Conversion Script**:
    
        ```bash
        touch csv_to_json.py
@@ -184,15 +184,15 @@ The Main Solution:
        df.to_json('output.json', orient='records', lines=True)
        ```
    
-   3. **Run the Conversion Script**:
+   - **Run the Conversion Script**:
    
        ```bash
        python3 csv_to_json.py
        ```
    
-   ### Setup and Import Data to MongoDB:
+   **Setup and Import Data to MongoDB:**
    
-   1. **Install MongoDB**:
+   - **Install MongoDB**:
    
        [Official MongoDB Installation Guide](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-ubuntu/)
    
@@ -211,7 +211,7 @@ The Main Solution:
        mongosh
        ```
    
-   2. **Import Data into MongoDB**:
+   - **Import Data into MongoDB**:
    
        ```bash
        mongoimport --db coffee --collection suppliers --file output.json
