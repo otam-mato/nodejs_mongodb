@@ -9,11 +9,12 @@
 
 <br>
 
-## - Modifying the Terraform template 
-## - Creating the infrastructure on AWS with Terraform
-## - Converting SQL database to NoSQL database
-## - Modifying the app files to use MongoDB for CRUD operations instead of MySQL
-## - Deploying the app on the created EC2 instances.
+**Steps:**
+- **Modifying the Terraform template** 
+- **Creating the infrastructure on AWS with Terraform**
+- **Converting SQL database to NoSQL database**
+- **Modifying the app files to use MongoDB for CRUD operations instead of MySQL**
+- **Deploying the app on the created EC2 instances**
 
 <br>
 
