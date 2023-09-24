@@ -55,9 +55,12 @@ This is a simple Node.JS Express application. It has a two-layer architecture: a
 
 ### 1. Creating the Infrastructure with Terraform
 
-<under revision>
+[under revision]
 
 ### 2. Converting MySQL database tp MongoDB database using Python
+
+
+
 ---
 
 
