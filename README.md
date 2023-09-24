@@ -10,6 +10,7 @@
 ## - Modifying the Terraform template 
 ## - Creating the infrastructure on AWS with Terraform
 ## - Converting SQL database to NoSQL database
+## - Modifying the app files to use MongoDB for CRUD operations instead of MySQL
 ## - Deploying the app on the created EC2 instances.
 
 <br>
@@ -23,6 +24,10 @@
 - MongoDB (noSQL)
 - Terraform
 
+<br>
+
+## Summary
+This is a simple Node.JS Express application. It has a two-layer architecture: application layer and data layer. It connects to a **MongoDB** database hosted on an AWS RDS instance, allowing for CRUD operations. Express provides a robust set of features for web and mobile applications.
 
 ---
 
