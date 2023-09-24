@@ -34,6 +34,13 @@ This is a simple Node.JS Express application. It has a two-layer architecture: a
   <img src="https://github.com/otam-mato/nodejs_mongodb_web_app_terraform/assets/113034133/3bfb9170-cdc5-462b-b12b-47e90c4bc439" width="700px"/>
 </p>
 
+p align="center">
+  <img src="https://github.com/otam-mato/nodejs_mysql_web_app_terraform/assets/113034133/08a5a711-8f1d-47ec-93fb-f73c430b47b9" width="700px"/>
+</p>
+
+<p align="center">
+  <img src="https://github.com/otam-mato/nodejs_mysql_web_app_terraform/assets/113034133/afb8cc08-2f0c-4dfe-84ae-0bf886ae0053" width="700px"/>
+</p>
 
 
 ---
