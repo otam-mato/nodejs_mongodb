@@ -63,7 +63,7 @@ This is a simple Node.JS Express application. It has a two-layer architecture: a
 
 ---
 
-
+<details markdown=1><summary markdown="span">Terraform main.tf here</summary>
 
 <br><br>
 
@@ -142,7 +142,7 @@ The Main Solution:
 
 <img width="1000" alt="Screenshot 2023-09-03 at 19 14 29" src="https://github.com/otam-mato/nodejs_mongodb/assets/113034133/ba99a5d7-55dd-46d2-8ba1-459ed184997f">
 
-
+</details>
 
 
 
