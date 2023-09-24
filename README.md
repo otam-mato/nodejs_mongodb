@@ -51,7 +51,13 @@ This is a simple Node.JS Express application. It has a two-layer architecture: a
 - A machine or EC2 instance to launch the Terraform script
 - Configure AWS access with AWS CLI and the command ```aws configure```
 
+## Running the App on AWS EC2 and RDS MySQL Instances
 
+### 1. Creating the Infrastructure with Terraform
+
+<under revision>
+
+### 2. Converting MySQL database tp MongoDB database using Python
 ---
 
 
