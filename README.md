@@ -1,5 +1,31 @@
+# NodeJS + MongoDB Web App. 
 
-# MongoDB + NodeJS
+<br>
+
+> **Note:** A part of the series of demo projects experimenting with a Node.js app.<br><br>
+> In this demo I automate creating the infrastructure on AWS using Terraform, convert the MySQL database to MongoDB database and deploy the app on EC2 instances.
+
+<br>
+
+# - Modifying the Terraform template and creating the infrastructure on AWS with Terraform
+# - Converting SQL database to NoSQL database
+# - Deploying the app on the created EC2 instances.
+
+<br>
+
+## Technologies used
+- AWS
+- EC2
+- Node.JS
+- Express
+- JavaScript
+- MongoDB (noSQL)
+- Terraform
+
+
+---
+
+
 
 <br><br>
 
