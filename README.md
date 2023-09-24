@@ -63,7 +63,7 @@ This is a simple Node.JS Express application. It has a two-layer architecture: a
 
 ---
 
-<details markdown=1><summary markdown="span">Terraform main.tf here</summary>
+<details markdown=1><summary markdown="span">OLD</summary>
 
 <br><br>
 
