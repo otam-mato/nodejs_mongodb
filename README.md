@@ -105,9 +105,9 @@ The Main Solution:
 
 ### 2. Converting MySQL database tp MongoDB database using Python
 
-   ### Setting up MySQL:
+   **Setting up MySQL:**
    
-   1. **Install MySQL**:
+   - **Install MySQL**:
    
        ```bash
        sudo apt install mysql-server -y
@@ -115,19 +115,19 @@ The Main Solution:
        sudo systemctl start mysql
        ```
    
-   2. **Access MySQL**:
+   - **Access MySQL**:
    
        ```bash
        sudo mysql
        ```
    
-   3. **Configure MySQL User**:
+   - **Configure MySQL User**:
    
        ```sql
        ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '<yoursecurepassword>';
        ```
    
-   4. **Create a Sample Database for Testing**:
+   - **Create a Sample Database for Testing**:
    
        ```sql
        CREATE DATABASE coffee;
@@ -151,7 +151,7 @@ The Main Solution:
    
        ![MySQL Screenshot](https://github.com/otammato/mongodb/assets/104728608/d288a854-cde8-4e2a-b87c-689ff2108344.png)
    
-   5. **Export Data to CSV**:
+   - **Export Data to CSV**:
    
        ```bash
        mysql -u root -p -e "SELECT * FROM suppliers" coffee > output.csv
