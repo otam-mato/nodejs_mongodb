@@ -21,7 +21,7 @@
 - Node.JS
 - Express
 - JavaScript
-- MongoDB (noSQL)
+- MongoDB (noSQL DBMS)
 - Terraform
 
 <br>
