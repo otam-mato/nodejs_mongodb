@@ -45,7 +45,7 @@ This is a simple Node.JS Express application. It has a two-layer architecture: a
 ## Prerequisites
 - AWS Account
 - Proper Permissions for your AWS user
-- Terraform installed ([Official Hashicorp installation guide]https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
+- Terraform installed ([Official Hashicorp installation guide](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli))
 - MySQL installed ([Article on Medium for installing on Amazon Linux 2023](https://muleif.medium.com/how-to-install-mysql-on-amazon-linux-2023-5d39afa5bf11) [or official installation guide for installing on UBUNTU](https://dev.mysql.com/doc/mysql-apt-repo-quick-guide/en/))
 - MongoDB installed ([Official MongoDB installation guide](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-ubuntu/))
 - A machine or EC2 instance to launch the Terraform script
