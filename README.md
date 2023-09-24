@@ -105,93 +105,93 @@ The Main Solution:
 
 ### 2. Converting MySQL database tp MongoDB database using Python
 
-## 1. Setting up MySQL:
-
-1. **Install MySQL**:
-
-    ```bash
-    sudo apt install mysql-server -y
-    sudo systemctl daemon-reload
-    sudo systemctl start mysql
-    ```
-
-2. **Access MySQL**:
-
-    ```bash
-    sudo mysql
-    ```
-
-3. **Configure MySQL User**:
-
-    ```sql
-    ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '<yoursecurepassword>';
-    ```
-
-4. **Create a Sample Database for Testing**:
-
-    ```sql
-    CREATE DATABASE coffee;
-    USE coffee;
-    CREATE TABLE suppliers(
-      id INT NOT NULL AUTO_INCREMENT,
-      name VARCHAR(255) NOT NULL,
-      address VARCHAR(255) NOT NULL,
-      city VARCHAR(255) NOT NULL,
-      state VARCHAR(255) NOT NULL,
-      email VARCHAR(255) NOT NULL,
-      phone VARCHAR(100) NOT NULL,
-      PRIMARY KEY (id)
-    );
-    ```
-
-    ```sql
-    INSERT INTO suppliers (name, address, city, state, email, phone)
-    VALUES ('John Smith', 'Downing Street, 10', 'London', 'Greater London', 'john.smith@hotmail.com', '1234567890');
-    ```
-
-    ![MySQL Screenshot](https://github.com/otammato/mongodb/assets/104728608/d288a854-cde8-4e2a-b87c-689ff2108344.png)
-
-5. **Export Data to CSV**:
-
-    ```bash
-    mysql -u root -p -e "SELECT * FROM suppliers" coffee > output.csv
-    ```
-
-## 1.2. Convert CSV to JSON:
-
-1. **Setup Python & Required Libraries**:
-
-    ```bash
-    sudo apt install python3-pip
-    pip3 install pandas
-    ```
-
-2. **Create the Conversion Script**:
-
-    ```bash
-    touch csv_to_json.py
-    ```
-
-    Then, add the following Python code to the file:
-
-    ```python
-    import pandas as pd
-
-    # Read the CSV file
-    df = pd.read_csv('output.csv', delimiter='\t')  # use tab as delimiter
-
-    # Convert dataframe to JSON format
-    df.to_json('output.json', orient='records', lines=True)
-    ```
-
-3. **Run the Conversion Script**:
-
-    ```bash
-    python3 csv_to_json.py
-    ```
-
-## 1.3. Setup and Import Data to MongoDB:
-
+   ### Setting up MySQL:
+   
+   1. **Install MySQL**:
+   
+       ```bash
+       sudo apt install mysql-server -y
+       sudo systemctl daemon-reload
+       sudo systemctl start mysql
+       ```
+   
+   2. **Access MySQL**:
+   
+       ```bash
+       sudo mysql
+       ```
+   
+   3. **Configure MySQL User**:
+   
+       ```sql
+       ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '<yoursecurepassword>';
+       ```
+   
+   4. **Create a Sample Database for Testing**:
+   
+       ```sql
+       CREATE DATABASE coffee;
+       USE coffee;
+       CREATE TABLE suppliers(
+         id INT NOT NULL AUTO_INCREMENT,
+         name VARCHAR(255) NOT NULL,
+         address VARCHAR(255) NOT NULL,
+         city VARCHAR(255) NOT NULL,
+         state VARCHAR(255) NOT NULL,
+         email VARCHAR(255) NOT NULL,
+         phone VARCHAR(100) NOT NULL,
+         PRIMARY KEY (id)
+       );
+       ```
+   
+       ```sql
+       INSERT INTO suppliers (name, address, city, state, email, phone)
+       VALUES ('John Smith', 'Downing Street, 10', 'London', 'Greater London', 'john.smith@hotmail.com', '1234567890');
+       ```
+   
+       ![MySQL Screenshot](https://github.com/otammato/mongodb/assets/104728608/d288a854-cde8-4e2a-b87c-689ff2108344.png)
+   
+   5. **Export Data to CSV**:
+   
+       ```bash
+       mysql -u root -p -e "SELECT * FROM suppliers" coffee > output.csv
+       ```
+   
+   ### Convert CSV to JSON:
+   
+   1. **Setup Python & Required Libraries**:
+   
+       ```bash
+       sudo apt install python3-pip
+       pip3 install pandas
+       ```
+   
+   2. **Create the Conversion Script**:
+   
+       ```bash
+       touch csv_to_json.py
+       ```
+   
+       Then, add the following Python code to the file:
+   
+       ```python
+       import pandas as pd
+   
+       # Read the CSV file
+       df = pd.read_csv('output.csv', delimiter='\t')  # use tab as delimiter
+   
+       # Convert dataframe to JSON format
+       df.to_json('output.json', orient='records', lines=True)
+       ```
+   
+   3. **Run the Conversion Script**:
+   
+       ```bash
+       python3 csv_to_json.py
+       ```
+   
+   ### Setup and Import Data to MongoDB:
+   
    1. **Install MongoDB**:
    
        [Official MongoDB Installation Guide](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-ubuntu/)
