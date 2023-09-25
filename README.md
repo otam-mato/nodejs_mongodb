@@ -233,9 +233,9 @@ The Main Solution:
 
      **MySQL version**:<br>
    
-     [config.js]()<br>
-     [supplier.controller.js]()<br>
-     [supplier.model.js]()<br>
+     [config.js](https://github.com/otam-mato/nodejs_mysql_web_app_terraform/blob/7f1a16b581ca88fed31721b1fd29be04fa0a2486/resources/codebase_partner/app/config/config.js)<br>
+     [supplier.controller.js](https://github.com/otam-mato/nodejs_mysql_web_app_terraform/blob/7f1a16b581ca88fed31721b1fd29be04fa0a2486/resources/codebase_partner/app/controller/supplier.controller.js)<br>
+     [supplier.model.js](https://github.com/otam-mato/nodejs_mysql_web_app_terraform/blob/7f1a16b581ca88fed31721b1fd29be04fa0a2486/resources/codebase_partner/app/models/supplier.model.js)<br>
      
      **MongoDB version**:<br>
      
