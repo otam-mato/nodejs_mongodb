@@ -239,6 +239,9 @@ sudo apt install nodejs
 sudo apt install npm
 ```
 
+[app web page](https://github.com/otam-mato/nodejs_mongodb_web_app_terraform/assets/113034133/2520e550-628b-4415-93d4-319490d38cde")
+
+
 ---
 
 <details markdown=1><summary markdown="span">OLD</summary>
