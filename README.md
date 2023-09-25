@@ -227,7 +227,23 @@ The Main Solution:
          <img src="https://github.com/otam-mato/nodejs_mongodb_web_app_terraform/assets/113034133/77a39437-cbed-47d4-a44e-c40be618f39c" width="700px"/>
        </p>
 
-### 3. Testing the app.
+### 3. Modifying the application code to replace SQL database connection code with MongoDB configuration.
+
+   - **To switch from MySQL to MongoDB I modified these app files**
+
+   - **MySQL version**:
+     [config.js]
+     [supplier.controller.js]
+     [supplier.model.js]
+     
+   - **MongoDB version**:
+     [config.js]
+     [supplier.controller.js]
+     [supplier.model.js]
+
+    <br>
+     
+### 4. Testing the app.
 
    - **Clone the current repository**:
     
