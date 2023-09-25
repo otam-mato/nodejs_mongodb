@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 const dbConfig =
-  "mongodb://localhost:27017/";
+  "mongodb://localhost:27017/coffee";
 
 // Create mongoose connection
 mongoose.connect(dbConfig, { useNewUrlParser: true, useUnifiedTopology: true });
