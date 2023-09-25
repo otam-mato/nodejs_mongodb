@@ -1,9 +1,9 @@
 const mongoose = require("mongoose");
-const dbConfig =
-  "mongodb://localhost:27017/coffee";
+const dbConfig = require("../config/config.js");
+  // "mongodb://localhost:27017/coffee";
 
 // Create mongoose connection
-mongoose.connect(dbConfig, { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(dbConfig.APP_DB_HOST, { useNewUrlParser: true, useUnifiedTopology: true });
 const db = mongoose.connection;
 db.on("error", console.error.bind(console, "MongoDB connection error:"));
 
