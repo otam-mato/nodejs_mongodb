@@ -229,15 +229,15 @@ The Main Solution:
 
 ### 3. Modifying the application code to replace SQL database connection code with MongoDB configuration.
 
-   - **To switch from MySQL to MongoDB I modified these app files**
+   - **To switch the app from MySQL to MongoDB I modified these app files:**
 
-   - **MySQL version**:<br>
+     **MySQL version**:<br>
    
      [config.js]()<br>
      [supplier.controller.js]()<br>
      [supplier.model.js]()<br>
      
-   - **MongoDB version**:<br>
+     **MongoDB version**:<br>
      
      [config.js]()<br>
      [supplier.controller.js]()<br>
