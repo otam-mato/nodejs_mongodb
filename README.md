@@ -29,6 +29,7 @@
 - Terraform
 
 
+
 <br>
 
 ## Summary
@@ -220,7 +221,8 @@ The Main Solution:
        mongoimport --db coffee --collection suppliers --file output.json
        ```
    
-       ![MongoDB Screenshot](https://github.com/otammato/mongodb/assets/104728608/ee9f8c66-c674-4927-ae8e-91f904659eeb.png)
+       ![MongoDB Screenshot](https://github.com/otam-mato/nodejs_mongodb_web_app_terraform/assets/113034133/77a39437-cbed-47d4-a44e-c40be618f39c)
+
 
 ### 3. Testing the app.
 
