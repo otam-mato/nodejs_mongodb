@@ -229,22 +229,37 @@ The Main Solution:
 
 ### 3. Testing the app.
 
-[under revision]
+   - **Clone the current repository**:
+    
+      ```
+      git clone https://github.com/otam-mato/nodejs_mongodb_web_app_terraform.git
+      ```
+      
+      ```
+      cd /home/ubuntu/nodejs_mongodb_web_app_terraform
+      ```
+   - **Install nodejs and npm**:
+      ```
+      sudo apt install nodejs
+      ```
+      ```
+      sudo apt install npm
+      ```
+   - **Install dependencies**:   
+      ```
+      npm install
+      ```
+   - **Start the app**:
+      ```
+      npm start
+      ```
+   - **Access the app in your web browser using ip/dns name and port 3000**:
 
-```
-git clone https://github.com/otam-mato/nodejs_mongodb_web_app_terraform.git
-```
-
-```
-sudo apt install nodejs
-```
-```
-sudo apt install npm
-```
-
-<p align="center">
-  <img src="https://github.com/otam-mato/nodejs_mongodb_web_app_terraform/assets/113034133/2520e550-628b-4415-93d4-319490d38cde" width="700px"/>
-</p>
+     <br>
+    
+      <p align="center">
+        <img src="https://github.com/otam-mato/nodejs_mongodb_web_app_terraform/assets/113034133/2520e550-628b-4415-93d4-319490d38cde" width="700px"/>
+      </p>
 
 ---
 
