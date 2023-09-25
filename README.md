@@ -231,15 +231,17 @@ The Main Solution:
 
    - **To switch from MySQL to MongoDB I modified these app files**
 
-   - **MySQL version**:
-     [config.js]
-     [supplier.controller.js]
-     [supplier.model.js]
+   - **MySQL version**:<br>
+   
+     [config.js]<br>
+     [supplier.controller.js]<br>
+     [supplier.model.js]<br>
      
-   - **MongoDB version**:
-     [config.js]
-     [supplier.controller.js]
-     [supplier.model.js]
+   - **MongoDB version**:<br>
+     
+     [config.js]<br>
+     [supplier.controller.js]<br>
+     [supplier.model.js]<br>
 
     <br>
      
