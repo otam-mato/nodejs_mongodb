@@ -110,6 +110,7 @@ The Main Solution:
    - **Install MySQL**:
    
        ```bash
+       sudo apt update
        sudo apt install mysql-server -y
        sudo systemctl daemon-reload
        sudo systemctl start mysql
