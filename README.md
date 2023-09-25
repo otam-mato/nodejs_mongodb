@@ -253,7 +253,7 @@ The Main Solution:
       ```
       npm start
       ```
-   - **Access the app in your web browser using ip/dns name and port 3000**:
+   - **Access the app in your web browser using ip/dns name of your server and port 3000**:
 
      <br>
     
