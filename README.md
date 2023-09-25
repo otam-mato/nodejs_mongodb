@@ -100,7 +100,7 @@ The Main Solution:
 - A machine or EC2 instance to launch the Terraform script
 - Configure AWS access with AWS CLI and the command ```aws configure```
 
-## Running the App on AWS EC2 and RDS MySQL Instances
+## Running the App on AWS EC2 Instances
 
 ### 1. Creating the Infrastructure with Terraform
 
