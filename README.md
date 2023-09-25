@@ -233,17 +233,17 @@ The Main Solution:
 
    - **MySQL version**:<br>
    
-     [config.js]<br>
-     [supplier.controller.js]<br>
-     [supplier.model.js]<br>
+     [config.js]()<br>
+     [supplier.controller.js]()<br>
+     [supplier.model.js]()<br>
      
    - **MongoDB version**:<br>
      
-     [config.js]<br>
-     [supplier.controller.js]<br>
-     [supplier.model.js]<br>
+     [config.js]()<br>
+     [supplier.controller.js]()<br>
+     [supplier.model.js]()<br>
 
-    <br>
+
      
 ### 4. Testing the app.
 
