@@ -250,7 +250,11 @@ The Main Solution:
       npm install
       ```
    - **Start the app**:
+     
+      you can create the ENV variable where your database is located, otherwise the APP_DB_HOST value from config.js will be used
+     
       ```
+      export APP_DB_HOST=mongodb://<your_host_ip>:27017/coffee  
       npm start
       ```
    - **Access the app in your web browser using ip/dns name of your server and port 3000**:
