@@ -1,6 +1,6 @@
 // define default config, but allow overrides from ENV vars
 let config = {
-  APP_DB_HOST: "mongodb://localhost:27017", // replace with your MongoDB Atlas or local connection string
+  APP_DB_HOST: "mongodb://localhost:27017/coffee", // replace with your MongoDB Atlas or local connection string
 }
 
 Object.keys(config).forEach(key => {
