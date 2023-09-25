@@ -16,7 +16,7 @@
 
 // module.exports = config;
 
-module.exports = {
-    APP_DB_URI: "mongodb://localhost:27017/suppliersDB"
-};
+// module.exports = {
+//     APP_DB_URI: "mongodb://localhost:27017/suppliersDB"
+// };
 
