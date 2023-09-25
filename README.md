@@ -79,7 +79,7 @@ The Main Solution:
 </details>
 
 <p align="center">
-  <img src="https://github.com/otam-mato/nodejs_mongodb_web_app_terraform/assets/113034133/2520e550-628b-4415-93d4-319490d38cde" width="700px"/>
+  <img src="https://github.com/otam-mato/nodejs_mongodb_web_app_terraform/assets/113034133/b303d21f-a5ac-4787-a194-b9068d7e05ba" width="700px"/>
 </p>
 
 <p align="center">
