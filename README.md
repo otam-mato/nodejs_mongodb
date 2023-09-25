@@ -10,11 +10,11 @@
 <br>
 
 **Steps:**
-- **Modify the Terraform template (+ EC2 - RDS)** 
-- **Create the infrastructure on AWS with Terraform**
-- **Migrate SQL data to NoSQL database**
-- **Modify the application code to replace SQL database connection code with MongoDB configuration.**
-- **Deploy the app on the created EC2 instances**
+- [**Modify the Terraform template (+ EC2 - RDS)**]()
+- [**Create the infrastructure on AWS with Terraform**]()
+- [**Migrate SQL data to NoSQL database**]()
+- [**Modify the application code to replace SQL database connection code with MongoDB configuration.**]()
+- [**Deploy the app on the created EC2 instances**]()
 
 <br>
 
