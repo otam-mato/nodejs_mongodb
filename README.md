@@ -264,7 +264,7 @@ The Main Solution:
       
      <br>
       
-   - **Access the app in your web browser using ip/dns name of your server and port 3000**:
+   - **Access the app in your web browser using the public ip/dns name of your server and port 3000**:
 
      <br>
     
