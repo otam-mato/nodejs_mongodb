@@ -12,7 +12,7 @@
 **Steps:**
 - [**Modify the Terraform template (+ EC2 - RDS)**]()
 - [**Create the infrastructure on AWS with Terraform**]()
-- [**Migrate SQL data to NoSQL database**]()
+- [**Migrate SQL data to NoSQL database**](https://github.com/otam-mato/nodejs_mongodb_web_app_terraform/tree/main#2-migrating-mysql-database-tp-mongodb-database-using-python)
 - [**Modify the application code to replace SQL database connection code with MongoDB configuration.**]()
 - [**Deploy the app on the created EC2 instances**]()
 
