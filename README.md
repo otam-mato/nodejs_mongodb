@@ -125,7 +125,7 @@ The Main Solution:
        sudo mysql
        ```
    
-   - **Configure MySQL User if you want to test the MySQL database before migrating**:
+   - **(optional) Configure MySQL User if you want to test the App with MySQL database before migrating**:
    
        ```sql
        ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '<yoursecurepassword>';
