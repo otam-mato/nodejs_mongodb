@@ -153,8 +153,9 @@ The Main Solution:
        VALUES ('John Smith', 'Downing Street, 10', 'London', 'Greater London', 'john.smith@hotmail.com', '1234567890');
        ```
    
-       ![MySQL Screenshot](https://github.com/otam-mato/nodejs_mongodb_web_app_terraform/assets/113034133/25499e57-75ae-41de-ab05-4add1adec35a)
-
+       <p align="center">
+         <img src="https://github.com/otam-mato/nodejs_mongodb_web_app_terraform/assets/113034133/25499e57-75ae-41de-ab05-4add1adec35a" width="700px"/>
+       </p>
    
    - **Export Data to CSV**:
    
@@ -221,9 +222,10 @@ The Main Solution:
        ```bash
        mongoimport --db coffee --collection suppliers --file output.json
        ```
-   
-       ![MongoDB Screenshot](https://github.com/otam-mato/nodejs_mongodb_web_app_terraform/assets/113034133/77a39437-cbed-47d4-a44e-c40be618f39c)
 
+       <p align="center">
+         <img src="https://github.com/otam-mato/nodejs_mongodb_web_app_terraform/assets/113034133/77a39437-cbed-47d4-a44e-c40be618f39c" width="700px"/>
+       </p>
 
 ### 3. Testing the app.
 
