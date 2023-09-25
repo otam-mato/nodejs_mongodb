@@ -228,6 +228,17 @@ The Main Solution:
 
 [under revision]
 
+```
+git clone https://github.com/otam-mato/nodejs_mongodb_web_app_terraform.git
+```
+
+```
+sudo apt install nodejs
+```
+```
+sudo apt install npm
+```
+
 ---
 
 <details markdown=1><summary markdown="span">OLD</summary>
