@@ -87,8 +87,9 @@ The Main Solution:
 </p>
 
 <p align="center">
-  <img src="https://github.com/otam-mato/nodejs_mysql_web_app_terraform/assets/113034133/afb8cc08-2f0c-4dfe-84ae-0bf886ae0053" width="700px"/>
+  <img src="https://github.com/otam-mato/nodejs_mongodb_web_app_terraform/assets/113034133/bc29741e-53c8-4f5c-8afe-c3da54477363" width="700px"/>
 </p>
+
 
 ## Prerequisites
 - AWS Account
