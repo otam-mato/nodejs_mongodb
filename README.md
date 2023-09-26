@@ -127,6 +127,8 @@ The Main Solution:
         <img src="https://github.com/otam-mato/nodejs_mongodb_web_app_terraform/assets/113034133/877a9781-c2b0-4f1a-a15a-243a12426e01" width="700px"/>
       </p>
 
+<br>
+
 ### 2. Migrating MySQL database tp MongoDB database using Python
 
    **Setting up MySQL:**
@@ -241,6 +243,8 @@ The Main Solution:
        <p align="center">
          <img src="https://github.com/otam-mato/nodejs_mongodb_web_app_terraform/assets/113034133/77a39437-cbed-47d4-a44e-c40be618f39c" width="700px"/>
        </p>
+
+<br>
 
 ### 3. Modifying the application code to replace SQL database connection code with MongoDB configuration.
 
