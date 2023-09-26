@@ -103,7 +103,7 @@ The Main Solution:
 
 ## Running the App on AWS EC2 Instances
 
-### 1. Creating the Infrastructure with Terraform
+### 1. Creating the Infrastructure with AWS CloudFormation
 
 [under revision]
 
