@@ -89,6 +89,7 @@ The Main Solution:
   <img src="https://github.com/otam-mato/nodejs_mongodb_web_app_terraform/assets/113034133/7112dbb2-b413-48d0-9da6-746f018481e4" width="700px"/>
 </p>
 
+<br>
 
 ## Prerequisites
 - AWS Account
@@ -98,6 +99,8 @@ The Main Solution:
 - MongoDB installed ([Official MongoDB installation guide](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-ubuntu/))
 - A machine or EC2 instance to launch the Terraform script
 - Configure AWS access with AWS CLI and the command ```aws configure```
+
+<br>
 
 ## Running the App on AWS EC2 Instances
 
