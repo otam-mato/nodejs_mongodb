@@ -91,7 +91,7 @@ The Main Solution:
 ## Prerequisites
 - AWS Account
 - Proper Permissions for your AWS user
-- AWS CLI installed ([A very informative article](https://www.cyberciti.biz/faq/how-to-install-aws-cli-on-linux/))
+- AWS CLI installed ([A very informative article here](https://www.cyberciti.biz/faq/how-to-install-aws-cli-on-linux/))
 - MySQL installed ([Article on Medium for installing on Amazon Linux 2023](https://muleif.medium.com/how-to-install-mysql-on-amazon-linux-2023-5d39afa5bf11) [or official installation guide for installing on UBUNTU](https://dev.mysql.com/doc/mysql-apt-repo-quick-guide/en/))
 - MongoDB installed ([Official MongoDB installation guide](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-ubuntu/))
 - A machine or EC2 instance to launch the Terraform script
