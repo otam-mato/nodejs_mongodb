@@ -107,6 +107,8 @@ The Main Solution:
 
 [under revision]
 
+[link to 'infra_launch.yml'](https://github.com/otam-mato/nodejs_mongodb_web_app_terraform/blob/5dad1390b5a806c74c12915d5f0e49aa199ef642/cloudformation_template/infra_launch.yml)
+
 <p align="center">
   <img src="https://github.com/otam-mato/nodejs_mongodb_web_app_terraform/assets/113034133/877a9781-c2b0-4f1a-a15a-243a12426e01" width="700px"/>
 </p>
