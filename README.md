@@ -1,5 +1,3 @@
-[under revision]
-
 # NodeJS + MongoDB Web App. 
 
 <br>
