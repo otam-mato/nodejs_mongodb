@@ -128,7 +128,7 @@ The Main Solution:
 
 <br>
 
-### 2. Migrating MySQL database tp MongoDB database using Python
+### 2. Migrating MySQL database to MongoDB database using Python
 
    - **SSH to 'EC2_mongo' server**
 
