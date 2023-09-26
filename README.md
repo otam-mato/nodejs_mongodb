@@ -27,9 +27,7 @@
 - JavaScript
 - Python (used for converting the database)
 - MongoDB (noSQL DBMS)
-- Terraform
-
-
+- AWS CloudFormation
 
 <br>
 
@@ -105,24 +103,28 @@ The Main Solution:
 
 ### 1. Creating the Infrastructure with AWS CloudFormation
 
-[under revision]
+   - **AWS CloudFormation file available here:**
 
-[link to 'infra_launch.yml'](https://github.com/otam-mato/nodejs_mongodb_web_app_terraform/blob/5dad1390b5a806c74c12915d5f0e49aa199ef642/cloudformation_template/infra_launch.yml)
+      [link to 'infra_launch.yml'](https://github.com/otam-mato/nodejs_mongodb_web_app_terraform/blob/5dad1390b5a806c74c12915d5f0e49aa199ef642/cloudformation_template/infra_launch.yml)
+      
+   - **Configure acess to AWS with:** 
 
-configure acess to AWS with: 
-
-```
-aws configure
-```
-launch the infrastructure set in infra_launch.yml with command:
-
-```
-aws cloudformation create-stack --stack-name YourStackName1 --template-body file://create2.yml
-```
-
-<p align="center">
-  <img src="https://github.com/otam-mato/nodejs_mongodb_web_app_terraform/assets/113034133/877a9781-c2b0-4f1a-a15a-243a12426e01" width="700px"/>
-</p>
+      ```
+      aws configure
+      ```
+   - **Launch the infrastructure set in infra_launch.yml with command:**
+      
+      ```
+      aws cloudformation create-stack --stack-name YourStackName1 --template-body file://create2.yml
+      ```
+      
+   - **Result:**
+     
+      <br>
+      
+      <p align="center">
+        <img src="https://github.com/otam-mato/nodejs_mongodb_web_app_terraform/assets/113034133/877a9781-c2b0-4f1a-a15a-243a12426e01" width="700px"/>
+      </p>
 
 ### 2. Migrating MySQL database tp MongoDB database using Python
 
