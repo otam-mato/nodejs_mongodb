@@ -95,7 +95,7 @@ The Main Solution:
 ## Prerequisites
 - AWS Account
 - Proper Permissions for your AWS user
-- Terraform installed ([Official Hashicorp installation guide](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli))
+- AWS CLI installed ([A very informative article](https://www.cyberciti.biz/faq/how-to-install-aws-cli-on-linux/))
 - MySQL installed ([Article on Medium for installing on Amazon Linux 2023](https://muleif.medium.com/how-to-install-mysql-on-amazon-linux-2023-5d39afa5bf11) [or official installation guide for installing on UBUNTU](https://dev.mysql.com/doc/mysql-apt-repo-quick-guide/en/))
 - MongoDB installed ([Official MongoDB installation guide](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-ubuntu/))
 - A machine or EC2 instance to launch the Terraform script
@@ -108,6 +108,17 @@ The Main Solution:
 [under revision]
 
 [link to 'infra_launch.yml'](https://github.com/otam-mato/nodejs_mongodb_web_app_terraform/blob/5dad1390b5a806c74c12915d5f0e49aa199ef642/cloudformation_template/infra_launch.yml)
+
+configure acess to AWS with: 
+
+```
+aws configure
+```
+launch the infrastructure set in infra_launch.yml with command:
+
+```
+aws cloudformation create-stack --stack-name YourStackName1 --template-body file://create2.yml
+```
 
 <p align="center">
   <img src="https://github.com/otam-mato/nodejs_mongodb_web_app_terraform/assets/113034133/877a9781-c2b0-4f1a-a15a-243a12426e01" width="700px"/>
