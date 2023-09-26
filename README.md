@@ -131,7 +131,7 @@ The Main Solution:
 
 ### 2. Migrating MySQL database tp MongoDB database using Python
 
-   _ **SSH to 'EC2_mongo' server**
+   - **SSH to 'EC2_mongo' server**
 
       ```
       ssh -i "<your_key>.pem" ubuntu@ec2-54-80-209-116.compute-1.amazonaws.com
