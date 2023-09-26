@@ -2,7 +2,6 @@
 
 <br>
 
-
 > **Note:** A part of the series of demo projects experimenting with a Node.js app.<br><br>
 > This time I migrate the backend MySQL database to MongoDB and launch the app on two EC2 instances on the AWS infrastructure.<br>
 > And instead of Terraform I used AWS CloudFormation for creating the infrastructure.
@@ -76,7 +75,7 @@ The Main Solution:
 </details>
 
 <p align="center">
-  <img src="https://github.com/otam-mato/nodejs_mongodb_web_app_terraform/assets/113034133/b303d21f-a5ac-4787-a194-b9068d7e05ba" width="700px"/>
+  <img src="https://github.com/otam-mato/nodejs_mongodb_web_app_terraform/assets/113034133/ce93658b-c5b0-41d6-808d-9387af96a267" width="700px"/>
 </p>
 
 <p align="center">
