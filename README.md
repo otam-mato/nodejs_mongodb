@@ -131,6 +131,12 @@ The Main Solution:
 
 ### 2. Migrating MySQL database tp MongoDB database using Python
 
+   _ **SSH to 'EC2_mongo' server**
+
+      ```
+      ssh -i "<your_key>.pem" ubuntu@ec2-54-80-209-116.compute-1.amazonaws.com
+      ```
+
    **Setting up MySQL:**
    
    - **Install MySQL**:
@@ -264,9 +270,15 @@ The Main Solution:
 
 <br>
      
-### 4. Testing the app.
+### 4. Testing the app on the web server.
 
-   - **Clone the current repository to the 'EC2InstanceNodeApp' server**:
+   - **SSH to 'EC2_nodeapp' server:**
+
+      ```
+      ssh -i "<your_key.pem" ubuntu@ec2-3-95-250-99.compute-1.amazonaws.com
+      ```
+
+   - **Clone the current repository to the 'EC2_nodeapp' server**:
     
       ```
       git clone https://github.com/otam-mato/nodejs_mongodb_web_app_terraform.git
