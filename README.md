@@ -4,6 +4,7 @@
 
 <br>
 
+
 > **Note:** A part of the series of demo projects experimenting with a Node.js app.<br><br>
 > This time I migrate the backend MySQL database to MongoDB and launch the app on two EC2 instances on the AWS infrastructure created with Terraform.
 
@@ -105,6 +106,10 @@ The Main Solution:
 ### 1. Creating the Infrastructure with Terraform
 
 [under revision]
+
+<p align="center">
+  <img src="https://github.com/otam-mato/nodejs_mongodb_web_app_terraform/assets/113034133/877a9781-c2b0-4f1a-a15a-243a12426e01" width="700px"/>
+</p>
 
 ### 2. Migrating MySQL database tp MongoDB database using Python
 
