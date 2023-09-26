@@ -338,8 +338,3 @@ The Main Solution:
 
 
 
-<img width="1126" alt="Screenshot 2023-09-26 at 21 45 41" src="https://github.com/otam-mato/nodejs_mongodb_web_app_terraform/assets/113034133/c6b12c63-df4f-434c-a945-cd5498bb5aad">
-<img width="1126" alt="Screenshot 2023-09-26 at 21 45 19" src="https://github.com/otam-mato/nodejs_mongodb_web_app_terraform/assets/113034133/b3a734ec-f3fe-413e-bbd3-f8881b17c38c">
-
-
-
