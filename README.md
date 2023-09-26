@@ -113,7 +113,7 @@ The Main Solution:
       ```
       aws configure
       ```
-   - **Launch the infrastructure set in infra_launch.yml with command:**
+   - **Launch the infrastructure set in 'infra_launch.yml' with this command:**
       
       ```
       aws cloudformation create-stack --stack-name YourStackName1 --template-body file://create2.yml
