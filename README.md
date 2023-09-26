@@ -262,7 +262,7 @@ The Main Solution:
      [supplier.controller.js](https://github.com/otam-mato/nodejs_mongodb_web_app_terraform/blob/3b29677e6e4a5387731065eacc7dd79ad0a0027b/app/controller/supplier.controller.js)<br>
      [supplier.model.js](https://github.com/otam-mato/nodejs_mongodb_web_app_terraform/blob/3b29677e6e4a5387731065eacc7dd79ad0a0027b/app/models/supplier.model.js)<br>
 
-
+<br>
      
 ### 4. Testing the app.
 
