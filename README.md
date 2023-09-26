@@ -288,7 +288,7 @@ The Main Solution:
       ```
    - **Start the app**:
      
-      you can create the ENV variable with endpoint where your database is hosted, otherwise the APP_DB_HOST value will be used from config.js 
+      you can create the ENV variable with the endpoint where your database is hosted, otherwise the APP_DB_HOST value will be used from config.js 
      
       ```
       export APP_DB_HOST=mongodb://<your_host_ip>:27017/coffee
