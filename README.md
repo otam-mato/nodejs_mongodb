@@ -137,6 +137,14 @@ The Main Solution:
       ssh -i "<your_key>.pem" ubuntu@ec2-54-80-209-116.compute-1.amazonaws.com
       ```
 
+      <br>
+
+      <p align="center">
+        <img src="https://github.com/otam-mato/nodejs_mongodb_web_app_terraform/assets/113034133/d9d2f951-1660-4b1e-88eb-ea7ec4766d61" width="700px"/>
+      </p>
+
+      <br>
+
    **Setting up MySQL:**
    
    - **Install MySQL**:
@@ -277,10 +285,13 @@ The Main Solution:
       ```
       ssh -i "<your_key.pem" ubuntu@ec2-3-95-250-99.compute-1.amazonaws.com
       ```
+      <br>
+      
+      <p align="center">
+        <img src="https://github.com/otam-mato/nodejs_mongodb_web_app_terraform/assets/113034133/7171213b-d05f-42f9-ba9c-a92f456cecb" width="700px"/>
+      </p>
 
-
-<img width="1126" alt="Screenshot 2023-09-26 at 21 45 41" src="https://github.com/otam-mato/nodejs_mongodb_web_app_terraform/assets/113034133/7171213b-d05f-42f9-ba9c-a92f456cecb6">
-<img width="1126" alt="Screenshot 2023-09-26 at 21 45 19" src="https://github.com/otam-mato/nodejs_mongodb_web_app_terraform/assets/113034133/d9d2f951-1660-4b1e-88eb-ea7ec4766d61">
+      <br>
 
    - **Clone the current repository to the 'EC2_nodeapp' server**:
     
