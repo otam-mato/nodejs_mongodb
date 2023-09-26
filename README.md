@@ -270,7 +270,7 @@ The Main Solution:
      
 ### 4. Testing the app.
 
-   - **Clone the current repository**:
+   - **Clone the current repository to the 'EC2InstanceNodeApp' server**:
     
       ```
       git clone https://github.com/otam-mato/nodejs_mongodb_web_app_terraform.git
