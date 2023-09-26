@@ -1,1 +1,137 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: >
+  This template deploys a VPC in us-east1, with a public and a private
+  subnets spread across two AZs. It deploys an internet gateway, with a default
+  route on the public subnets, and two Linux t2.micro Instances with Security Groups - one as
+  a web server and another as a DB server and launch scripts to prepare them to host.
+Resources:
+  VPC:
+    Type: "AWS::EC2::VPC"
+    Properties:
+      CidrBlock: "10.0.0.0/16"
+      EnableDnsSupport: true
+      EnableDnsHostnames: true
+      Tags:
+        - Key: "Name"
+          Value: "VPC for nodejs app testing"
+  InternetGateway:
+    Type: "AWS::EC2::InternetGateway"
+    Properties:
+      Tags:
+        - Key: "Name"
+          Value: "VPC for nodejs app testing"
+  InternetGatewayAttachment:
+    Type: "AWS::EC2::VPCGatewayAttachment"
+    Properties:
+      InternetGatewayId: !Ref InternetGateway
+      VpcId: !Ref VPC
+  PublicSubnet1:
+    Type: "AWS::EC2::Subnet"
+    Properties:
+      VpcId: !Ref VPC
+      AvailabilityZone: !Select [0, !GetAZs ""]
+      CidrBlock: "10.0.1.0/24"
+      MapPublicIpOnLaunch: true
+      Tags:
+        - Key: "Name"
+          Value: "VPC for nodejs app testing  Public Subnet 1"
+  PrivateSubnet1:
+    Type: "AWS::EC2::Subnet"
+    Properties:
+      VpcId: !Ref VPC
+      AvailabilityZone: !Select [0, !GetAZs ""]
+      CidrBlock: "10.0.11.0/24"
+      MapPublicIpOnLaunch: false
+      Tags:
+        - Key: "Name"
+          Value: "VPC for nodejs app testing Private Subnet 1"
+  PublicRouteTable:
+    Type: "AWS::EC2::RouteTable"
+    Properties:
+      VpcId: !Ref VPC
+      Tags:
+        - Key: "Name"
+          Value: "VPC for nodejs app testing  Public Routes"
+  DefaultPublicRoute:
+    Type: "AWS::EC2::Route"
+    DependsOn: InternetGatewayAttachment
+    Properties:
+      RouteTableId: !Ref PublicRouteTable
+      DestinationCidrBlock: "0.0.0.0/0"
+      GatewayId: !Ref InternetGateway
+  PublicSubnet1RouteTableAssociation:
+    Type: "AWS::EC2::SubnetRouteTableAssociation"
+    Properties:
+      RouteTableId: !Ref PublicRouteTable
+      SubnetId: !Ref PublicSubnet1
+  WebServerSecurityGroup:
+    Type: "AWS::EC2::SecurityGroup"
+    Properties:
+      GroupDescription: "Web Server Traffic"
+      SecurityGroupIngress:
+        - IpProtocol: "tcp"
+          FromPort: "80"
+          ToPort: "80"
+          CidrIp: "0.0.0.0/0"
+        - IpProtocol: "tcp"
+          FromPort: "22"
+          ToPort: "22"
+          CidrIp: "0.0.0.0/0" # modify to allow acess only from your IP for security
+      VpcId: !Ref VPC
+  DbServerSecurityGroup:
+    Type: "AWS::EC2::SecurityGroup"
+    Properties:
+      GroupDescription: "Web Server Traffic"
+      SecurityGroupIngress:
+        - IpProtocol: "tcp"
+          FromPort: "27017"
+          ToPort: "27017"
+          CidrIp: "0.0.0.0/0" # modify to allow acess only from your WebServerSecurityGroup for security
+      VpcId: !Ref VPC
+  EC2InstanceNodeApp:
+    Type: "AWS::EC2::Instance"
+    Properties:
+      ImageId: "ami-053b0d53c279acc90"
+      InstanceType: "t2.micro"
+      KeyName: "test_delete.pem"
+      SubnetId: !Ref PublicSubnet1
+      SecurityGroupIds:
+        - !Ref WebServerSecurityGroup
+      Tags:
+        - Key: "Name"
+          Value: "EC2_nodeapp"
+      UserData:
+        Fn::Base64: !Sub |
+          #!/bin/bash
+          sudo apt-get install -y git
+          git clone https://github.com/otam-mato/nodejs_mongodb_web_app_terraform.git
+          sudo apt install nodejs
+          sudo apt install npm
+  EC2InstanceDBserver:
+    Type: "AWS::EC2::Instance"
+    Properties:
+      ImageId: "ami-053b0d53c279acc90"
+      InstanceType: "t2.micro"
+      KeyName: "test_delete.pem"
+      SubnetId: !Ref PublicSubnet1
+      SecurityGroupIds:
+        - !Ref WebServerSecurityGroup
+      Tags:
+        - Key: "Name"
+          Value: "EC2_mongo"
+      UserData:
+        Fn::Base64: !Sub |
+          sudo apt-get install gnupg curl
+          curl -fsSL https://pgp.mongodb.com/server-7.0.asc | sudo gpg -o /usr/share/keyrings/mongodb-server-7.0.gpg --dearmor
+          echo "deb [ arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb-server-7.0.gpg ] https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/7.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-7.0.list
+          sudo apt-get update
+          sudo apt-get install -y mongodb-org
+          ps --no-headers -o comm 1
+          sudo systemctl start mongod
+          sudo systemctl status mongod
+          sudo systemctl enable mongod
 
+Outputs:
+  PublicIp:
+    Description: "EC2 Instance Public Ip"
+    Value: !GetAtt EC2InstanceNodeApp.PublicIp
