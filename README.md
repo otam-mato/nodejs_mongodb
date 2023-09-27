@@ -118,7 +118,7 @@ The Main Solution:
       aws cloudformation create-stack --stack-name YourStackName1 --template-body file://create2.yml
       ```
       
-   - **Result:**
+   - **Result (the stack created):**
      
       <br>
       
