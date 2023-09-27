@@ -21,7 +21,6 @@
 - AWS
 - EC2
 - Node.JS
-- Express
 - JavaScript
 - Python (used for converting the database)
 - MongoDB (noSQL DBMS)
