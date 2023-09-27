@@ -298,11 +298,11 @@ The Main Solution:
    - **Clone the current repository to the 'EC2_nodeapp' server**:
     
       ```
-      git clone https://github.com/otam-mato/nodejs_mongodb_web_app_terraform.git
+      git clone https://github.com/otam-mato/nodejs_mongodb_web_app_awscloudformation.git
       ```
       
       ```
-      cd /home/ubuntu/nodejs_mongodb_web_app_terraform
+      cd /home/ubuntu/nodejs_mongodb_web_app_awscloudformation
       ```
    - **Install nodejs and npm**:
       ```
