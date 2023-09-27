@@ -12,7 +12,7 @@
 **Steps:**
 - [**Create the infrastructure on AWS with CloudFormation**](https://github.com/otam-mato/nodejs_mongodb_web_app_terraform/blob/main/README.md#1-creating-the-infrastructure-with-aws-cloudformation)
 - [**Migrate SQL data to NoSQL database**](https://github.com/otam-mato/nodejs_mongodb_web_app_terraform/tree/main#2-migrating-mysql-database-tp-mongodb-database-using-python)
-- [**Modify the application code to replace SQL database connection code with MongoDB configuration.**](https://github.com/otam-mato/nodejs_mongodb_web_app_terraform/tree/main#3-modifying-the-application-code-to-replace-sql-database-connection-code-with-mongodb-configuration)
+- [**Modify the app code to replace SQL database configuration with MongoDB configuration.**](https://github.com/otam-mato/nodejs_mongodb_web_app_terraform/tree/main#3-modifying-the-application-code-to-replace-sql-database-connection-code-with-mongodb-configuration)
 - [**Testing the app on the created EC2 instances**](https://github.com/otam-mato/nodejs_mongodb_web_app_terraform/blob/main/README.md#4-testing-the-app)
 
 <br>
