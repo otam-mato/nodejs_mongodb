@@ -5,7 +5,7 @@
 > **Note:** A part of the series of demo projects experimenting with a Node.js app.<br><br>
 > This time I migrate the backend MySQL database to MongoDB and launch the app on two EC2 instances on the AWS infrastructure.<br>
 >
-> As an Infrastructure as Code tool, instead of Terraform, I used AWS CloudFormation for creating the infrastructure.
+> As an 'Infrastructure as Code' tool, instead of Terraform, I used AWS CloudFormation for creating the infrastructure.
 
 <br>
 
