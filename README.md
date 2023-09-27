@@ -194,7 +194,7 @@ The Main Solution:
        mysql -u root -p -e "SELECT * FROM suppliers" coffee > output.csv
        ```
    
-   **Convert CSV to JSON:**
+   **Convert the data (CSV to JSON):**
    
    - **Setup Python & Required Libraries**:
    
