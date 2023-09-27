@@ -2,8 +2,8 @@
 
 <br>
 
-> **Note:** A part of the series of demo projects experimenting with a Node.js app.<br><br>
-> This time I migrate the backend MySQL database to MongoDB and launch the app on two EC2 instances on the AWS infrastructure.<br>
+> **Note:** This is part of a series of demo projects in which I explore a Node.js application.<br><br>
+> In this installment I migrate the backend MySQL database to MongoDB and launch the app on two EC2 instances within the AWS infrastructure.<br>
 >
 > For infrastructure provisioning, I opted for AWS CloudFormation as the Infrastructure as Code (IaC) tool instead of Terraform.
 
