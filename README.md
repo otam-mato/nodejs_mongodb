@@ -262,7 +262,7 @@ The Main Solution:
 
 ### 3. Modifying the application code to replace SQL database connection code with MongoDB configuration.
 
-   In short, you have to modify files to employ 'Mongoose.js' framework, set up a connection to MongoDB and modify methods to perfom 'CRUD' operations. Mongoose.js is an Object Data Modeling (ODM) library for MongoDB, which is a NoSQL database. It provides a structured way to interact with MongoDB by defining schemas for your data models and offering a range of features for data validation, querying, and middleware support.
+   > In short, you have to modify files to employ 'Mongoose.js' framework, set up a connection to MongoDB and modify methods to perfom 'CRUD' operations. Mongoose.js is an Object Data Modeling (ODM) library for MongoDB, which is a NoSQL database. It provides a structured way to interact with MongoDB by defining schemas for your data models and offering a range of features for data validation, querying, and middleware support.
 
    - **To switch the app from MySQL to MongoDB I modified these app files:**
 
