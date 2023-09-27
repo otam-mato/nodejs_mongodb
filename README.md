@@ -177,7 +177,8 @@ The Main Solution:
          PRIMARY KEY (id)
        );
        ```
-   
+   - **Insert values into the table 'suppliers'**:
+    
        ```sql
        INSERT INTO suppliers (name, address, city, state, email, phone)
        VALUES ('John Smith', 'Downing Street, 10', 'London', 'Greater London', 'john.smith@hotmail.com', '1234567890');
