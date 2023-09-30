@@ -29,6 +29,7 @@
 
 <br>
 
+
 ## Summary
 This is a simple Node.JS Express application. It has a two-layer architecture: application layer and data layer. It connects to a **MongoDB** database hosted on an AWS EC2 instance, allowing for CRUD operations. Express provides a robust set of features for web and mobile applications.
 
@@ -76,7 +77,7 @@ The Main Solution:
 </details>
 
 <p align="center">
-  <img src="https://github.com/otam-mato/nodejs_mongodb_web_app_awscloudformation/assets/113034133/fe44ee2f-2728-4224-a990-b0ed2bec829b" width="700px"/>
+  <img src="https://github.com/otam-mato/nodejs_mongodb_web_app_awscloudformation/assets/113034133/93d1932d-63de-4260-8823-a1fc36d3dddd" width="700px"/>
 </p>
 
 <p align="center">
