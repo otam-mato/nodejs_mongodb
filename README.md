@@ -76,10 +76,8 @@ The Main Solution:
 </details>
 
 <p align="center">
-  <img src="https://github.com/otam-mato/nodejs_mongodb_web_app_terraform/assets/113034133/ce93658b-c5b0-41d6-808d-9387af96a267" width="700px"/>
+  <img src="https://github.com/otam-mato/nodejs_mongodb_web_app_awscloudformation/assets/113034133/fe44ee2f-2728-4224-a990-b0ed2bec829b" width="700px"/>
 </p>
-
-https://github.com/otam-mato/nodejs_mongodb_web_app_awscloudformation/assets/113034133/fe44ee2f-2728-4224-a990-b0ed2bec829b
 
 <p align="center">
   <img src="https://github.com/otam-mato/nodejs_mongodb_web_app_terraform/assets/113034133/2520e550-628b-4415-93d4-319490d38cde" width="700px"/>
